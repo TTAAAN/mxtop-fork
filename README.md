@@ -1,16 +1,18 @@
-# asitop
+> **mxtop** is an actively maintained fork of the original `asitop`. It aims to fix long-standing bugs and ensure compatibility with the latest macOS updates and Apple Silicon chips.
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/asitop)
+# mxtop
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/mxtop)
 
 Performance monitoring CLI tool for Apple Silicon
 
-![](images/asitop.png)
+![](images/mxtop.png)
 
 ```shell
-pip install asitop
+pip install mxtop
 ```
 
-## What is `asitop`
+## What is `mxtop`
 
 A Python-based `nvtop`-inspired command line tool for Apple Silicon (aka M1) Macs.
 
@@ -26,24 +28,24 @@ A Python-based `nvtop`-inspired command line tool for Apple Silicon (aka M1) Mac
   * Chart for CPU/GPU power
   * Peak power, rolling average display
 
-`asitop` uses the built-in [`powermetrics`](https://www.unix.com/man-page/osx/1/powermetrics/) utility on macOS, which allows access to a variety of hardware performance counters. Note that it requires `sudo` to run due to `powermetrics` needing root access to run. `asitop` is lightweight and has minimal performance impact.
+`mxtop` uses the built-in [`powermetrics`](https://www.unix.com/man-page/osx/1/powermetrics/) utility on macOS, which allows access to a variety of hardware performance counters. Note that it requires `sudo` to run due to `powermetrics` needing root access to run. `mxtop` is lightweight and has minimal performance impact.
 
-**`asitop` only works on Apple Silicon Macs on macOS Monterey!**
+**`mxtop` only works on Apple Silicon Macs on macOS Monterey!**
 
 ## Installation and Usage
 
-`asitop` is a Python-based command line tool. You need `pip` to download and install `asitop`. macOS already comes with Python, to install `pip`, you can follow an [online guide](https://phoenixnap.com/kb/install-pip-mac). After you install `asitop` via `pip`, you can use it via the Terminal.
+`mxtop` is a Python-based command line tool. You need `pip` to download and install `mxtop`. macOS already comes with Python, to install `pip`, you can follow an [online guide](https://phoenixnap.com/kb/install-pip-mac). After you install `mxtop` via `pip`, you can use it via the Terminal.
 
 ```shell
 # to enter password before start
 # this mode is recommended!
-sudo asitop
+sudo mxtop
 
 # it will prompt password on start
-asitop
+mxtop
 
 # advanced options
-asitop [-h] [--interval INTERVAL] [--color COLOR] [--avg AVG]
+mxtop [-h] [--interval INTERVAL] [--color COLOR] [--avg AVG]
 optional arguments:
   -h, --help           show this help message and exit
   --interval INTERVAL  Display interval and sampling interval for powermetrics (seconds)
