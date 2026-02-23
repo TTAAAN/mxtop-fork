@@ -1,5 +1,5 @@
 > **mxtop** is an actively maintained fork of the original `asitop`. It aims to fix long-standing bugs and ensure compatibility with the latest macOS updates and Apple Silicon chips.
-
+ 
 # mxtop
 
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/mxtop)
