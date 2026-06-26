@@ -143,7 +143,7 @@ def run_powermetrics_process(
     """Spawn ``powermetrics`` as a background process writing to a temp file."""
     cleanup_tmp_files()
     cmd = [
-        "sudo", "nice", f"-n{nice}",
+        "nice", f"-n{nice}",
         "powermetrics",
         "--samplers", "cpu_power,gpu_power,thermal",
         "-o", f"{_TMP_PREFIX}{timecode}",
